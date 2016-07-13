@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 
-namespace CodingCraft_04.infraestrcture.Membership
+namespace CodingCraft-04_Membership.infraestrcture.Membership
 {
     public class CustomMembershipUser : MembershipUser
     {

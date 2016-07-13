@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace CodingCraft_04
+namespace CodingCraft-04_Membership
 {
     public class MvcApplication : System.Web.HttpApplication
     {

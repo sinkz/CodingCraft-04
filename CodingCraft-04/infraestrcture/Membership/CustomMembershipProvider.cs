@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Security;
 using WebMatrix.WebData;
 
-namespace CodingCraft_04.infraestrcture.Membership
+namespace CodingCraft-04_Membership.infraestrcture.Membership
 {
     public class CustomMembershipProvider : ExtendedMembershipProvider
     {

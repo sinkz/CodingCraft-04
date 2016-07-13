@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CodingCraft_04")]
+[assembly: AssemblyTitle("CodingCraft-04_Membership")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hewlett-Packard Company")]
-[assembly: AssemblyProduct("CodingCraft_04")]
+[assembly: AssemblyProduct("CodingCraft-04_Membership")]
 [assembly: AssemblyCopyright("Copyright © Hewlett-Packard Company 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CodingCraft_04.Controllers
+namespace CodingCraft-04_Membership.Controllers
 {
     public class HomeController : Controller
     {

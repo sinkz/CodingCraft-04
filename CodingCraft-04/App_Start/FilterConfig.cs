@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace CodingCraft_04
+namespace CodingCraft-04_Membership
 {
     public class FilterConfig
     {
