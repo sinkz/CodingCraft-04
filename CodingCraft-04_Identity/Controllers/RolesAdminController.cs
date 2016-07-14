@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using System.Collections.Generic;
+using CodingCraft_04_Identity.Models;
+using System;
 
 namespace IdentitySample.Controllers
 {
@@ -60,7 +62,7 @@ namespace IdentitySample.Controllers
 
         //
         // GET: /Roles/Details/5
-        public async Task<ActionResult> Details(string id)
+        public async Task<ActionResult> Details(long id)
         {
             if (id == null)
             {
@@ -98,7 +100,7 @@ namespace IdentitySample.Controllers
         {
             if (ModelState.IsValid)
             {
-                var role = new IdentityRole(roleViewModel.Name);
+                var role = new Grupo { Name = roleViewModel.Name };
                 var roleresult = await RoleManager.CreateAsync(role);
                 if (!roleresult.Succeeded)
                 {
@@ -112,12 +114,12 @@ namespace IdentitySample.Controllers
 
         //
         // GET: /Roles/Edit/Admin
-        public async Task<ActionResult> Edit(string id)
+        public async Task<ActionResult> Edit(long id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
+            //if (id == null)
+            //{
+            //    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            //}
             var role = await RoleManager.FindByIdAsync(id);
             if (role == null)
             {
@@ -146,7 +148,7 @@ namespace IdentitySample.Controllers
 
         //
         // GET: /Roles/Delete/5
-        public async Task<ActionResult> Delete(string id)
+        public async Task<ActionResult> Delete(long id)
         {
             if (id == null)
             {
@@ -164,7 +166,7 @@ namespace IdentitySample.Controllers
         // POST: /Roles/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> DeleteConfirmed(string id, string deleteUser)
+        public async Task<ActionResult> DeleteConfirmed(long id, string deleteUser)
         {
             if (ModelState.IsValid)
             {

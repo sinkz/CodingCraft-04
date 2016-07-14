@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingCraft-04_Membership", "CodingCraft-04\CodingCraft-04_Membership.csproj", "{34C170B2-96C3-46F0-8159-C8529D65D702}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingCraft-04_Identity", "CodingCraft-04_Identity\CodingCraft-04_Identity.csproj", "{E10D7C07-4413-4A63-A2F7-47F9BE453436}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{34C170B2-96C3-46F0-8159-C8529D65D702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34C170B2-96C3-46F0-8159-C8529D65D702}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34C170B2-96C3-46F0-8159-C8529D65D702}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34C170B2-96C3-46F0-8159-C8529D65D702}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E10D7C07-4413-4A63-A2F7-47F9BE453436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E10D7C07-4413-4A63-A2F7-47F9BE453436}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E10D7C07-4413-4A63-A2F7-47F9BE453436}.Release|Any CPU.ActiveCfg = Release|Any CPU

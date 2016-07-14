@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace CodingCraft-04_Membership
+namespace CodingCraft-04
 {
     public class BundleConfig
     {

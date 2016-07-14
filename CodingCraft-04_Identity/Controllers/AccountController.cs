@@ -9,6 +9,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using CodingCraft_04_Identity.Models;
 
 namespace IdentitySample.Controllers
 {
@@ -169,7 +170,7 @@ namespace IdentitySample.Controllers
         //
         // GET: /Account/ConfirmEmail
         [AllowAnonymous]
-        public async Task<ActionResult> ConfirmEmail(string userId, string code)
+        public async Task<ActionResult> ConfirmEmail(long userId, string code)
         {
             if (userId == null || code == null)
             {

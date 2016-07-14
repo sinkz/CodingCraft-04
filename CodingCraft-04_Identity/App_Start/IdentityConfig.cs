@@ -68,16 +68,16 @@ namespace IdentitySample.Models
     }
 
     // Configure the RoleManager used in the application. RoleManager is defined in the ASP.NET Identity core assembly
-    public class ApplicationRoleManager : RoleManager<IdentityRole>
+    public class ApplicationRoleManager : RoleManager<Grupo, long>
     {
-        public ApplicationRoleManager(IRoleStore<IdentityRole, string> roleStore)
+        public ApplicationRoleManager(IRoleStore<Grupo, long> roleStore)
             : base(roleStore)
         {
         }
 
         public static ApplicationRoleManager Create(IdentityFactoryOptions<ApplicationRoleManager> options, IOwinContext context)
         {
-            return new ApplicationRoleManager(new RoleStore<IdentityRole>(context.Get<ApplicationDbContext>()));
+            return new ApplicationRoleManager(new RoleStore<Grupo, long, UsuarioGrupo>(context.Get<ApplicationDbContext>()));
         }
     }
 
@@ -123,7 +123,7 @@ namespace IdentitySample.Models
             var role = roleManager.FindByName(roleName);
             if (role == null)
             {
-                role = new IdentityRole(roleName);
+                role = new Grupo { Name = roleName };
                 var roleresult = roleManager.Create(role);
             }
 

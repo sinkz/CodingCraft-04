@@ -14,5 +14,12 @@ namespace CodingCraft_04_Identity.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public string Endereco { get; set; }
+        public string Bairro { get; set; }
+        public string Cidade { get; set; }
+        public string Estado { get; set; }
+        public string Pais { get; set; }
+
     }
 }

@@ -10,6 +10,7 @@ using System.Net;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using CodingCraft_04_Identity.Models;
 
 namespace IdentitySample.Controllers
 {
@@ -61,7 +62,7 @@ namespace IdentitySample.Controllers
 
         //
         // GET: /Users/Details/5
-        public async Task<ActionResult> Details(string id)
+        public async Task<ActionResult> Details(long id)
         {
             if (id == null)
             {
@@ -122,12 +123,12 @@ namespace IdentitySample.Controllers
 
         //
         // GET: /Users/Edit/1
-        public async Task<ActionResult> Edit(string id)
+        public async Task<ActionResult> Edit(long id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
+            //if (id == null)
+            //{
+            //    return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            //}
             var user = await UserManager.FindByIdAsync(id);
             if (user == null)
             {
@@ -192,7 +193,7 @@ namespace IdentitySample.Controllers
 
         //
         // GET: /Users/Delete/5
-        public async Task<ActionResult> Delete(string id)
+        public async Task<ActionResult> Delete(long id)
         {
             if (id == null)
             {
@@ -210,7 +211,7 @@ namespace IdentitySample.Controllers
         // POST: /Users/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> DeleteConfirmed(string id)
+        public async Task<ActionResult> DeleteConfirmed(long id)
         {
             if (ModelState.IsValid)
             {
